@@ -17,13 +17,13 @@ interface UserOrderServiceInterface
 {
     /**
      * 方法1
-     * 订单支付后，根据订单增加用户进货额
+     * 订单支付后，根据订单增加用户进货额.
      */
     public function handle(Order $order): bool;
 
     /**
      * 方法1
-     * 订单退款后，根据订单减少用户进货额
+     * 订单退款后，根据订单减少用户进货额.
      */
     public function refund(Order $order): bool;
 }
