@@ -1,5 +1,14 @@
 <?php
 
+declare(strict_types=1);
+/**
+ * This file is part of Hyperf.
+ *
+ * @link     https://www.hyperf.io
+ * @document https://hyperf.wiki
+ * @contact  group@hyperf.io
+ * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ */
 class A
 {
     public $a;
@@ -27,17 +36,14 @@ class B
     }
 }
 
-function test(){
+function test()
+{
     $a = new A();
     $b = new B($a);
 }
 
 test();
 
-while (true){
+while (true) {
     sleep(1);
 }
-
-
-
-
